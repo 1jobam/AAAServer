@@ -1,0 +1,9 @@
+package kr.or.ddit.svn;
+
+public class SvnTest {
+	public static void main(String[] args) {
+		System.out.println("SVN 테스트중.....");
+		System.out.println("수정");
+		System.out.println("테스트");
+	}
+}

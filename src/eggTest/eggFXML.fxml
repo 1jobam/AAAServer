@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eggTest.eggController">
+   <children>
+      <ImageView fx:id="ima" fitHeight="228.0" fitWidth="186.0" layoutX="207.0" layoutY="111.0" onMouseClicked="#eggclick" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="counts" alignment="CENTER" layoutX="186.0" layoutY="21.0" prefHeight="61.0" prefWidth="228.0">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

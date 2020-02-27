@@ -1,0 +1,40 @@
+package eggTest;
+
+import java.net.URL;
+import java.util.ResourceBundle;
+
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+
+public class eggController implements Initializable {
+
+	@FXML 
+	private ImageView ima;
+
+	private int count;
+
+	@FXML Image change;
+	
+	@Override
+	public void initialize(URL location, ResourceBundle resources) {
+		System.out.println("Test");
+	}
+
+	@FXML 
+	public void eggclick(MouseEvent event) {
+		count++;
+		
+		System.out.println(count);
+		
+		if(count == 10) {
+			ima.setImage(new Image(getClass().getResource("egg2.png").toString()));
+		}else if(count == 15) {
+			ima.setImage(new Image(getClass().getResource("eggs.gif").toString()));
+		}
+	}
+
+
+}

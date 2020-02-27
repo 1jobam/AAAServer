@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:controller="gavabo.gavaboController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="442.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="133.0" layoutY="238.0" prefHeight="159.0" prefWidth="347.0">
+         <children>
+            <ImageView fx:id="ga" onMouseClicked="#gaga">
+               <image>
+                  <Image url="@선택가위.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="va" onMouseClicked="#vava">
+               <image>
+                  <Image url="@선택바위.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bo" onMouseClicked="#bobo">
+               <image>
+                  <Image url="@선택보.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fx:id="ima" fitHeight="150.0" fitWidth="200.0" layoutX="103.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@사람1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imas" fitHeight="150.0" fitWidth="200.0" layoutX="363.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@사람2.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="250.0" layoutY="128.0" prefHeight="48.0" prefWidth="101.0" text="VS" textFill="RED">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="me" layoutX="154.0" layoutY="42.0" text="Label" />
+      <Label fx:id="com" layoutX="405.0" layoutY="42.0" text="Label" />
+      <Label alignment="CENTER" layoutX="228.0" layoutY="22.0" prefHeight="41.0" prefWidth="145.0" text="가위바위보 명승부">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="dobal" layoutX="33.0" layoutY="306.0" mnemonicParsing="false" text="도발하기" />
+      <Button fx:id="runs" layoutX="502.0" layoutY="306.0" mnemonicParsing="false" text="도망가기" />
+   </children>
+</Pane>
